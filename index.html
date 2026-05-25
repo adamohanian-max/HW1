@@ -1,0 +1,80 @@
+<!--
+File: index.html
+GUI Assignment: Creating Your First Web Page
+Adam Ohanian, UMass Lowell Computer Science, adam_ohanian@student.uml.edu
+Copyright (c) 2026 by Adam. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by AO on May 25, 2026 at 11:00 AM.
+Description: This Web page allows a user to view holes on a 9 hole golf course.
+Each hole will have a map of the hole, a description of it and the par for the hole.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umass Lowell Golf Course &mdash; Course Information</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Umass Lowell Golf Course</h1>
+        <p> Umass Lowell's (fictional) 3-hole golf course</p>
+        <nav>
+            <ul>
+                <li><a href="#hole1">Hole 1</a></li>
+                <li><a href="#hole2">Hole 2</a></li>
+                <li><a href="#hole3">Hole 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+    <section class="intro">
+    <h2>Welcome to UML GC</h2>
+    <p>Alongside the Merrimack River, Umass Lowell's 3-hole golf course offers students an opportunity to enjoy a short round of golf on campus. With a good mix of distances, players will have the opportunity to test their skills in a variety of ways.</p> 
+    <p><strong>Par:</strong> 12</p>
+    <p><strong>Total yardage:</strong> 1,000 yds</p>
+    <h3>Scorecard</h3>
+    <table>
+      <caption>Umass Lowell Golf Course &mdash; Hole Summary</caption>
+      <thead>
+        <tr>
+          <th scope="col">Hole</th>
+          <th scope="col">Par</th>
+          <th scope="col">Yardage</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>4</td><td>350</td></tr>
+        <tr><td>2</td><td>3</td><td>150</td></tr>
+        <tr><td>3</td><td>5</td><td>500</td></tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="hole" id="hole1">
+    <h2>Hole 1 &mdash; "The River Bend"</h2>
+    <img src="images/hole1.png" alt="Map of Hole 1" class="hole-map">
+    <p>Par 4, 350 yards. This hole features a gentle dogleg left around the river, with a bunker guarding the green on the right. With the river guarding the left side of the fairway and trees to the right, this seemingly easy par 4 can lead to a sneakily challenging experience.</p>
+  </section>
+  <section class="hole" id="hole2">
+    <h2>Hole 2 &mdash; "The Valley"</h2>
+    <img src="images/hole2.png" alt="Map of Hole 2" class="hole-map">
+    <p>Par 3, 150 yards. This hole takes advantage of the natural valley, offering a scenic route to the green. With bunkers on the left and right of the hole, precision is key to walk away with a par.</p>
+  </section>
+  <section class="hole" id="hole3">
+    <h2>Hole 3 &mdash; "The Summit"</h2>
+    <img src="images/hole3.png" alt="Map of Hole 3" class="hole-map">
+    <p>Par 5, 500 yards. The most challenging hole on the course, featuring a long approach shot to a raised green. With bunkers guarding the front of the green, and a steep incline behind it, this hole can be reward players who play conservatively.</p>
+  </section>
+</main>
+  <footer>
+    <p>&copy; 2026 Adam Ohanian &bull; UMass Lowell &bull; GUI 1</p>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer"
+       target="_blank" rel="noopener noreferrer">
+      <img src="https://jigsaw.w3.org/css-validator/images/vcss"
+           alt="Valid CSS!" width="88" height="31" loading="lazy">
+    </a>
+  </footer>
+
+</body>
+</html>
